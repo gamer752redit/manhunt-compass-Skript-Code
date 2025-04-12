@@ -1,0 +1,49 @@
+options:
+    update_interval: 1
+
+every {@update_interval} second:
+    if {manhunt_active} is true:
+        loop all players:
+            if tool of loop-player-1 is compass:
+                set {_closest_player} to "none"
+                set {_min_distance} to 100000
+                
+                loop all players:
+                    if loop-player-2 is not loop-player-1:
+                        set {_x1} to x-coord of loop-player-1
+                        set {_z1} to z-coord of loop-player-1
+                        set {_x2} to x-coord of loop-player-2
+                        set {_z2} to z-coord of loop-player-2
+                        set {_distance} to sqrt(({_x1}-{_x2})^2 + ({_z1}-{_z2})^2)
+                        
+                        if {_distance} < {_min_distance}:
+                            set {_min_distance} to {_distance}
+                            set {_closest_player} to loop-player-2
+                
+                if {_closest_player} is not "none":
+                    set compass target of loop-player-1 to location of {_closest_player}
+                    send action bar "&eZiel: &c%{_closest_player}% &7(&e%{_min_distance}% Blöcke&7)" to loop-player-1
+
+command /manhuntcompass:
+    trigger:
+        loop all players:
+            give loop-player compass named "&6Manhunt-Kompass"
+            set lore of tool of loop-player to "&7Zeigt den nächsten Spieler"
+        send "&aKompasse verteilt!" to sender
+
+command /manhuntstart:
+    trigger:
+        set {manhunt_active} to true
+        send "&aManhunt gestartet!" to sender
+
+command /manhuntstop:
+    trigger:
+        set {manhunt_active} to false
+        loop all players:
+            remove 1 compass from loop-player
+        send "&cManhunt gestoppt!" to sender
+
+on join:
+    if {manhunt_active} is true:
+        give player compass named "&6Manhunt-Kompass"
+        set lore of tool of player to "&7Zeigt den nächsten Spieler"
