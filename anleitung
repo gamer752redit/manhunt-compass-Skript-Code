@@ -6,7 +6,7 @@
 
 3. starte deinen server
 
-4. zihe das heruntergeladene skript (join skript.sk) in das plugin
+4. zihe das heruntergeladene skript (manhunt_compass.sk) in das plugin
     -plugins > Skript > scripts > manhunt_compass.sk
 
 5. reloade dein Skript damit du direkt loslegen kannst!
@@ -28,7 +28,7 @@
 
 3. Start your server
 
-4. Drag the downloaded script (join skript.sk) into the plugin
+4. Drag the downloaded script (manhunt_compass.sk) into the plugin
 - plugins > Script > scripts > manhunt_compass.sk
 
 5. Reload your script so you can get started right away!
