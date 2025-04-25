@@ -1,41 +1,118 @@
-1. lade dir das skript runter
-    - das skript findest du auch hier im github
+✅ Manhunt Compass Installation
+1. 📥 Skript downloaden
 
-2. lade dir das plugin "Skript" herunter
-    - https://www.spigotmc.org/resources/skript.114544/
+Hol dir manhunt_compass.sk von GitHub
+(Link in der Projektbeschreibung)
 
-3. starte deinen server
+2. ⚙️ Skript-Plugin installieren
 
-4. zihe das heruntergeladene skript (manhunt_compass.sk) in das plugin
-    -plugins > Skript > scripts > manhunt_compass.sk
+Erforderlich: Skript Plugin
 
-5. reloade dein Skript damit du direkt loslegen kannst!
-    - /skript reload monster manhunt_compass.sk
+➡️ Einfach in den plugins-Ordner kopieren
 
-6. nutze diese commands: /manhuntcompass, /manhuntstart, /manhuntstop
+3. 🚀 Server starten
 
-7. Viel Spass/Glück beim testen!
+Warte bis alle Plugins geladen sind
 
-   ⚠️ BITTE GEBE DAS SKRIPT NICHT ALS DEINS AUS ⚠️
+4. 📂 Skript einfügen
 
+markdown
+plugins/
+└── Skript/
+    └── scripts/
+        └── manhunt_compass.sk  ← Hier ablegen
+5. 🔄 Skript aktivieren
 
+bash
+/skript reload manhunt_compass.sk
+6. 🎮 Verfügbare Befehle:
 
-1. Download the script
-- You can also find the script here on GitHub
+bash
+/manhuntcompass  # Kompass-Funktion
+/manhuntstart    # Jagd beginnen
+/manhuntstop     # Jagd beenden
+⚠️ Wichtige Hinweise
 
-2. Download the "Script" plugin
-- https://www.spigotmc.org/resources/skript.114544/
+🔄 Nach Änderungen immer neu laden
 
-3. Start your server
+❌ Nicht als eigenes Werk veröffentlichen
 
-4. Drag the downloaded script (manhunt_compass.sk) into the plugin
-- plugins > Script > scripts > manhunt_compass.sk
+🐛 Fehler melden: GitHub Issues
 
-5. Reload your script so you can get started right away!
-- /skript reload monster manhunt_compass.sk
+💡 Pro-Tipps
 
-6. Use these commands: /manhuntcompass, /manhuntstart, /manhuntstop
+Teste mit mind. 2 Spielern
 
-7. Have fun/luck testing!
+Kompass funktioniert nur im Überwelt
 
-⚠️ PLEASE DO NOT PASS THE SCRIPT AS YOURS ⚠️
+Nutze /manhuntstop nach Spielende
+
+🇬🇧 English Version
+
+✅ Manhunt Compass Setup
+1. 📥 Download script
+
+Get manhunt_compass.sk from GitHub
+(Link in project description)
+
+2. ⚙️ Install Skript
+
+Required: Skript Plugin
+
+➡️ Place in plugins folder
+
+3. 🚀 Start server
+
+Wait for full initialization
+
+4. 📂 Add script
+
+markdown
+plugins/
+└── Skript/
+    └── scripts/
+        └── manhunt_compass.sk  ← Place here
+5. 🔄 Activate script
+
+bash
+/skript reload manhunt_compass.sk
+6. 🎮 Available commands:
+
+bash
+/manhuntcompass  # Toggle compass
+/manhuntstart    # Start game
+/manhuntstop     # End game
+⚠️ Important Notes
+
+🔄 Reload after modifications
+
+❌ Don't claim as your own work
+
+🐛 Report bugs via GitHub Issues
+
+💡 Pro Tips
+
+Test with 2+ players
+
+Compass works only in Overworld
+
+Use /manhuntstop post-game
+
+✨ Viel Spaß beim Manhunt!
+(Happy hunting!)
+
+Neue Features:
+
+🔍 Klare Befehlserklärungen
+
+🌍 Überwelt-Hinweis eingefügt
+
+🐛 Bug-Report-Hinweis
+
+🎮 Spieleranzahl-Empfehlung
+
+✨ Konsistente Icons
+
+📌 Wichtige Pfade hervorgehoben
+
+🔄 Reload-Befehl korrigiert ("monster" entfernt)
